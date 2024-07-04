@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   <script src="script.js"></script>
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div id="container">
         <h1>Dice Roller</h1>
-        <label ># : of dices</label>
-        <input type="number" value="number" min="1">
-        <button onclick="rolldice"></button>Roll_Dice</button>
+        <label ># of dices:</label>
+        <input type="number" id="numOfDice" value="1" min="1">
+        <button onclick="rollDice()">Roll Dice</button>
+        <div id="diceResult"></div>
+        <div id="diceImages"></div>
     </div>
-    <div class="diceresult"></div>
-    <div class="diceimages"></div>
+    <script src="script.js"></script>
 </body>
 </html>
